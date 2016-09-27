@@ -4,7 +4,15 @@
     <h2 class="widget-title">{{@blog.title}} Newsletter</h2>
 
     {{#if @labs.subscribers}}
-      {{subscriber_form}}
+      <h3 class="gh-subscribe-title">Subscribe to {{@blog.title}}</h3>
+      {{subscribe_form
+        form_class="gh-signin"
+        input_class="gh-input"
+        button_class="btn btn-blue btn-block"
+        placeholder="Your email address"
+        autofocus="true"
+      }}
+      <span class="gh-subscribe-rss">or subscribe <a href="http://cloud.feedly.com/#subscription/feed/{{@blog.url}}/rss/">via RSS</a> with Feedly!</span>
     {{else}}
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup">
@@ -30,7 +38,7 @@
 
   <aside class="widget widget-text">
     <h2 class="widget-title">About {{@blog.title}}</h2>
-    <p>Robot Studio creates and supports the development of open source robotics and artificial intelligence.</p>
+    <p>Robot Studio is an advocate for the development of open source robotics and artificial intelligence.</p>
   </aside><!-- .widget -->
 
 <!--
