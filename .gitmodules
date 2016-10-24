@@ -4,3 +4,6 @@
 [submodule "content/themes/mockups"]
 	path = content/themes/mockups
 	url = https://github.com/mewben/mockups.git
+[submodule "scripts"]
+	path = scripts
+	url = https://github.com/TheLarsonAgency/aws-ecs-deploy-scripts.git
