@@ -1,3 +1,3 @@
-# The RobotStudio Website
+# The Robot Studio Website
 
 Congrats!  You've found it.
